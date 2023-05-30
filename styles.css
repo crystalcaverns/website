@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  text-decoration: none;
+  box-sizing: border-box;
+  /* font-family: 'Rubik', sans-serif;
+  font-family: 'Open Sans', sans-serif; */
+}
+:root{
+  --main-purple: #9944FF;
+  --secondary-purple: #BDA4FF;
+  --bg-color: #000000;
+  --neutral-white: #FFFFFF;
+  --discord-brand-color: #5865F2;
+}
+body{
+  background-color: var(--bg-color);
+  margin-top:2rem;
+  margin-bottom:1000px;
+  margin:auto;
+  max-width: 95vw;
+}
+.navbar{
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+  width:100%;
+  font-family:'Open Sans', sans-serif;
+  margin:2rem 0 4rem 0;
+}
+.navbar ul {
+  display: flex;
+  gap:2rem;
+  flex-direction: row;
+}
+.navbar ul li a {
+  color:white;
+  text-transform: capitalize;
+  transition: color 150ms;
+  font-size:45px;
+  font-weight:600;
+  cursor:pointer;
+  
+}
+.navbar ul li a:hover {
+  color:var(--main-purple);
+}
+.ip-adress-wrapper{
+  background-color: var(--main-purple);
+  padding:1rem 2rem;
+  border-radius:15px;
+  cursor:pointer;
+  transition:opacity 0.15s;
+  color:white;
+  font-size:45px;
+  font-weight: 700;
+}
+.ip-adress-wrapper:hover{
+  opacity: 0.9;
+}
+.hero{
+  width:100%;
+  font-family:'Open Sans', sans-serif;
+  position: relative;
+}
+.logo-big{
+  margin:auto;
+  width:40%;
+  display:inline-block;
+  position:absolute;
+  left:0;
+  right:0;
+  margin-left:auto;
+  margin-right:auto;
+}
+.hero-banner{
+  margin-top:7rem;
+  width:100%;
+}
+.watch-trailer-button{
+  background-color: var(--main-purple);
+  padding:2rem 3rem 2rem 3rem;
+  border-radius:30px;
+  cursor:pointer;
+  color:white;
+  font-size:50px;
+  border:none;
+  font-family:'Open Sans', sans-serif;
+  font-weight: 800;
+  letter-spacing: 5px;
+}
+.social-media-wrapper{
+  width:50%;
+  height:100px;
+}
+.social-media-wrapper img {
+  height:100px;
+  display:inline-block;
+}
+.social-media-wrapper h1 {
+  color:var(--secondary-purple);
+  font-size:50px;
+  font-family: 'Open Sans', sans-serif;
+  margin:auto;
+}
+.hero-text{
+  color:white;
+  vertical-align: center;
+  font-size:40px;
+  width:60ch;
+  margin:auto;
+  text-align: center;
+  margin-top:2rem;
+}
