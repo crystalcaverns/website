@@ -16,6 +16,25 @@
   --neutral-white: #FFFFFF;
   --discord-brand-color: #5865F2;
 }
+button, a{
+  cursor:pointer;
+}
+button{
+  transition: opacity 0.2s;
+}
+button:hover{
+  opacity: 0.7;
+}
+a{
+  transition: color 0.15s
+}
+a:hover{
+  color:var(--main-purple)
+}
+hr{
+  width:95%;
+  margin: 2rem auto 0 auto;
+}
 html{
   width:100%;
   min-height:100vh;
@@ -54,7 +73,10 @@ body{
   font-weight: 700;
   background-color: var(--main-purple);
   border-radius: 0.6rem;
-  padding:0.5rem;
+  padding:0.8rem;
+  border:none;
+  color:white;
+  letter-spacing: 0.5px;
 }
 .hero{
   margin:auto;
@@ -129,7 +151,8 @@ body{
   margin-bottom:0.3rem;
   aspect-ratio: 16/9;
   object-fit: cover;
-  border-radius:0.5rem
+  border-radius:0.5rem;
+  cursor:pointer;
 }
 .gallery-item > h3 {
   color:var(--secondary-purple);
@@ -149,6 +172,7 @@ body{
   padding:1rem 0 1rem 0;
   margin: 2rem auto 2rem auto;
   display: grid;
+  cursor:pointer;
 }
 .call-to-action h2 {
   font-size: 2rem;
@@ -194,7 +218,25 @@ footer h1 {
   place-self: center;
 }
 @media(width > 1100px){
-
+  .social-media{
+    width:50%;
+  }
+  .gallery-title{
+    font-size: 3.5rem;
+  }
+  .gallery-item h3 {
+    font-size: 2.5rem;
+  }
+  .gallery-item p {
+    font-size: 1.3rem;
+  }
+  .call-to-action-section{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  footer h1 {
+    font-size: 2rem;
+  }
 }
 @media(width < 800px) {
   .ip-adress{
