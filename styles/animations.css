@@ -1,0 +1,21 @@
+button, a{
+  cursor:pointer;
+  text-decoration: none;
+}
+button{
+  transition: opacity 0.2s;
+}
+button:hover{
+  opacity: 0.7;
+}
+a{
+  transition: color 0.15s;
+  color:inherit
+}
+a:hover{
+  color:var(--main-purple)
+}
+hr{
+  width:95%;
+  margin: 2rem auto 0 auto;
+}

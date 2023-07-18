@@ -1,0 +1,84 @@
+@media screen and (width > 1100px){
+  li:first-child{
+    display:none;
+  }
+  li:not(:first-child) {
+    display:block;
+  }
+  .social-media{
+    width:50%;
+  }
+  .gallery-title{
+    font-size: 3.5rem;
+  }
+  .gallery-item h3 {
+    font-size: 2.5rem;
+  }
+  .gallery-item p {
+    font-size: 1.3rem;
+  }
+  .call-to-action-section{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  footer h1 {
+    font-size: 2rem;
+  }
+}
+@media screen and (width < 800px) {
+  .logo-big{
+    width:50%;
+  }
+  .watch-trailer-btn{
+    font-size: 1.2rem;
+    padding:0.5rem;
+    letter-spacing: 1px;
+    border-radius:0.5rem;
+  }
+  .hero-text{
+    font-size:1rem;
+    width:90%;
+  }
+  .social-media {
+    width:90%;
+  }
+  .social-media button {
+    height:5%;
+  }
+  .gallery-title{
+    font-size: 2rem;
+  }
+  .gallery{
+    grid-template-columns: 1fr;
+  }
+  .call-to-action{
+    padding:1rem !important;
+    grid-template-columns: 1fr !important;
+  }
+  #discord, #store{
+    text-align: center;
+  }
+  #discord img {
+    grid-row: -1;
+  }
+  .call-to-action img {
+    margin:1rem auto;
+    width:40%;
+  }
+  .call-to-action h2 {
+    font-size:2rem;
+    padding-bottom:0.5rem;
+  }
+  .call-to-action p {
+    font-size:1rem
+  }
+  footer{
+    grid-template-columns: 15% 1fr;
+    padding:0.3rem;
+    justify-items: center;
+  }
+  footer > h1 {
+    font-size:.9rem;
+    font-weight: 400;
+  }
+}

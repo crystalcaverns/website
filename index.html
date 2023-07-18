@@ -6,31 +6,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Crystal Caverns | Minecraft server</title>
   <link rel="icon" type="image/x-icon" href="images/favicon-150-150-logo.png">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles/animations.css">
+  <link rel="stylesheet" href="styles/call-to-action.css">
+  <link rel="stylesheet" href="styles/footer.css">
+  <link rel="stylesheet" href="styles/gallery.css">
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/hero.css">
+  <link rel="stylesheet" href="styles/reactive-layout.css">
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
   <header>
     <nav class="navbar">
     <ul>
-      <li><a>home</a></li>
-      <li><a>rules</a></li>
-      <li><a>store</a></li>
+      <li><a href="javascript:void(0);" class="icon" onclick="openNavbar()"></a></li>
+        <i class="hamburger-menu fa fa-bars"></i>
+      <li><a href="/">home</a></li>
+      <li><a href="#">rules</a></li>
+      <li><a href="#">store</a></li>
+      <li><a href="https://discord.gg/6VC4zpYnJW" target="_blank">discord</a></li>
     </ul>
     <button class="ip-adress">play.crystalcaverns.net</button>
+    <input style="display:none" type="text" value="play.crystalcaverns.net" id="js-copy">
     </nav>
   </header>
   <section class="hero">
-    <img class="logo-big" src="images/crystal-caverns-logo.png">
+    <img class="logo-big" src="images/crystal_caverns_logo.png">
     <img class="hero-banner" src="images/hero.webp">
     <button class="watch-trailer-btn">WATCH TRAILER</button>
     <p class="hero-text">We're an upcoming survival server with RPG elements, custom bosses, biomes, enchants, a wonderful resource pack and much more! Our goal is to create a unique survival experience with awesome features and a great community that you can get lost in for hours.</p>
   </section>
   <section class="social-media">
-    <button><img class="social-media-btn-img" alt="Discord Logo" src="images/discord-logo.svg"></button>
-    <button><img class="social-media-btn-img" alt="TikTok Logo" src="images/tiktok-logo.svg"></button>
-    <button><img class="social-media-btn-img" alt="Twitter Logo" src="images/twitter-logo.svg"></button>
-    <button><img class="social-media-btn-img" alt="Youtube Logo" src="images/youtube-logo.svg"></button>
-    <button><img class="social-media-btn-img" alt="Instagram Logo" src="images/instagram-logo.svg"></button>
+    <a target="_blank" href="#"><img class="social-media-btn-img" alt="Discord Logo" src="images/discord-logo.svg"></a>
+    <a target="_blank" href="#"><img class="social-media-btn-img" alt="TikTok Logo" src="images/tiktok-logo.svg"></a>
+    <a target="_blank" href="https://twitter.com/CrystalCaverns_"><img class="social-media-btn-img" alt="Twitter Logo" src="images/twitter-logo.svg"></a>
+    <a target="_blank" href="https://www.youtube.com/channel/UCi1BObPMJuwSJxYIOOvqHHg"><img class="social-media-btn-img" alt="Youtube Logo" src="images/youtube-logo.svg"></a>
+    <a target="_blank" href="#"><img class="social-media-btn-img" alt="Instagram Logo" src="images/instagram-logo.svg"></a>
   </section>
   <h1 class="gallery-title">Find out more!</h1>
   <section class="gallery">
@@ -51,8 +64,8 @@
     </div>
     <div class="gallery-item">
       <img src="images/portal_screenshot.png" alt="Items & Enchants">
-      <h3>More Items & enchants!</h3>
-      <p>You can obtain tons of new items and enchantments, which give you all sorts of cool upgrades!</p>
+      <h3>Over 15 Billion unique Items!</h3>
+      <p>Every item you acquire on your journey will be unique, with custom enchants, names and rarities!</p>
     </div>
   </section>
   <hr>
