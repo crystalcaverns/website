@@ -8,9 +8,10 @@
   font-family: 'Open Sans', sans-serif; */
 }
 :root{
-  --main-purple: #9944FF;
+  --main-purple:  #9944FF;
   --secondary-purple: #BDA4FF;
   --bg-color: #000000;
+  --accent-color: #3B3BB5;
   --neutral-white: #FFFFFF;
   --discord-brand-color: #5865F2;
 }
