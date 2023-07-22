@@ -12,13 +12,13 @@ function copyServerAdress() {
 
 function openNavbar() {
   const navbar = document.querySelector('.navbar')
-  // console.log(navbar)
   
   if(navbar.className === 'navbar') {
     navbar.className += ' reactive'
   } else {
     navbar.className = 'navbar'
   }
+  console.log(navbar)
 }
 // function openTrailer() {
 //   popupWindow = document.querySelector('iframe');
