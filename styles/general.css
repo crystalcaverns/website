@@ -20,11 +20,11 @@ html{
   min-height:100vh;
 }
 body{
-  padding:1rem;
   width:100%;
   background-color: var(--bg-color);
   font-family: 'Open Sans', sans-serif;
   color:white;
   max-width: 1500px;
   margin:auto;
+  position:relative; 
 }

@@ -1,10 +1,4 @@
 @media(width > 1100px){
-  li:first-child{
-    display:none;
-  }
-  li:not(:first-child) {
-    display:block;
-  }
   .social-media{
     width:50%;
   }
@@ -31,10 +25,6 @@
   }
   .hero{
     overflow: hidden;
-  }
-  .logo-big{
-    top:-4rem;
-    width:80%;
   }
   .watch-trailer-btn{
     font-size: 7vw;
