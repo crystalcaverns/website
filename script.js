@@ -20,3 +20,13 @@ function openNavbar() {
     navbar.className = 'navbar'
   }
 }
+// function openTrailer() {
+//   popupWindow = document.querySelector('iframe');
+//   if(popupWindow.className === '') {
+//     popupWindow.className = 'trailer-open'
+//   } else {
+//     popupWindow.className = ' '
+//   }
+//   console.log(popupWindow)
+
+// }
