@@ -11,6 +11,9 @@
   .gallery-item p {
     font-size: 1.3rem;
   }
+  .social-media-btn-img{
+    height:6rem;
+  }
   .call-to-action-section{
     display:grid;
     grid-template-columns: 1fr 1fr;
@@ -20,6 +23,9 @@
   }
 }
 @media(width < 700px) {
+  .logo-big{
+    min-width:40%;
+  }
   body{
     padding: 1rem 0;
   }
@@ -27,7 +33,7 @@
     overflow: hidden;
   }
   .watch-trailer-btn{
-    font-size: 7vw;
+    font-size: 5vw;
     padding:0.5rem 1rem;
     letter-spacing: 1px;
     border-radius:0.5rem;
@@ -42,10 +48,7 @@
     width:90%;
   }
   .social-media {
-    width:100% !important;
-  }
-  .social-media-btn-img{
-    height:5.5vh;
+    width:90% !important;
   }
   .gallery-title{
     margin-top:0.5rem;

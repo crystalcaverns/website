@@ -17,7 +17,7 @@
 .watch-trailer-btn{
   display:grid;
   justify-self: center;
-  font-size:2.3rem;
+  font-size:2rem;
   padding:1rem 2rem 1rem 2rem;
   font-weight: 900;
   letter-spacing: 4px;
@@ -45,8 +45,8 @@
   border-radius: 1rem;
 }
 .social-media-btn-img {
-  width:100%;
-  height:5rem;
+  width:90%;
+  height:9vw;
 }
 iframe{
   position:absolute;

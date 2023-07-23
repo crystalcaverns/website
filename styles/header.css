@@ -9,6 +9,12 @@
   'GRAD' 0,
   'opsz' 48
 }
+.navbar a:first-child:hover {
+  color:white;
+}
+.navbar a:last-child:hover {
+  color:white;
+}
 .navbar li:first-child {
   display:none;
 }
@@ -24,18 +30,19 @@
 }
 .navbar li:last-child{
   float:right;
-  margin:0;
+  margin:0 0 2rem 0;
 }
 .ip-adress{
   font-size: 2rem;
   font-weight: 700;
   background-color: var(--main-purple);
   border-radius: 0.6rem;
-  padding:0.5rem 1rem;
+  padding:0.5rem 1rem 0.5rem 1rem;
   border:none;
   color:white;
   letter-spacing: 0.5px;
   text-transform: none;
+  text-align:center;
 }
 .navbar li:first-child span {
   font-size: 3rem;
