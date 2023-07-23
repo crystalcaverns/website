@@ -9,12 +9,6 @@
   'GRAD' 0,
   'opsz' 48
 }
-.navbar a:first-child:hover {
-  color:white;
-}
-.navbar a:last-child:hover {
-  color:white;
-}
 .navbar li:first-child {
   display:none;
 }
@@ -49,6 +43,12 @@
   margin:0;
 }
 @media screen and (width < 1000px) {
+  .navbar a:first-child:hover {
+    color:white;
+  }
+  .navbar a:last-child:hover {
+    color:white;
+  }
   .navbar{
     margin-bottom: 0;
   }
