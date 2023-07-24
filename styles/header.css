@@ -20,7 +20,8 @@
   font-size: 2rem;
   font-weight: 700;
   display:grid;
-  align-self:center
+  align-self:center;
+  user-select: none;
 }
 .navbar li:last-child{
   float:right;
@@ -43,6 +44,9 @@
   margin:0;
 }
 @media screen and (width < 1000px) {
+  .navbar li {
+    max-width: 7ch;
+  }
   .navbar a:first-child:hover {
     color:white;
   }
@@ -85,13 +89,3 @@
     float:none;
   }
 }
-
-
-
-
-
-
-
-/* .ip-adress{
-  
-} */

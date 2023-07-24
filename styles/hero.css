@@ -25,8 +25,7 @@
   background-color: var(--main-purple);
   border:none;
   border-radius: 1rem;
-  margin: 0 auto;
-  margin-bottom: 2rem; 
+  margin: 1rem auto 1rem auto;
 }
 .hero-text{
   font-size: 1.7rem;

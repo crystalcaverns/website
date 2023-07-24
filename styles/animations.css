@@ -16,10 +16,12 @@ a:hover:not(.cta):not(.ip-adress){
   color:var(--main-purple);
 }
 .ip-adress:hover{
-  opacity:0.8;
+  /* opacity:0.8; */
 }
 .ip-adress{
-  transition: opacity 0.15s;
+  /* transition: opacity 0.15s; */
+  user-select: all;
+  cursor:text;
 }
 /* a:active:not(.cta){
   color:var(--main-purple);
