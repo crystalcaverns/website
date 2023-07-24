@@ -1,15 +1,15 @@
-console.log('working')
+console.log('Welcome to Crystal Caverns! :D')
+// function copyServerAdress() {
+//   let ipButton = document.querySelector('.ip-adress')
+//   ipButton = document.createElement('button');
+//   ipButton.classList.add('ip-adress');
+//   ipButton.textContent = '192.168.1.1';
 
-function copyServerAdress() {
-  const ipButton = document.querySelector('.ip-adress')
-  const copyText = document.getElementById('js-copy')
-  console.log(copyText.value)
-  copyText.select()
-
-  navigator.clipboard.writeText(ipButton)
-  console.log(ipButton)
-}
-
+//   ipButton.addEventListener('click', () => {
+//     const textToCopy = ipButton.textContent;
+//     let clipboard = new ClipboardJS();
+//     clipboard.writeText(textToCopy);
+// });
 function openNavbar() {
   const navbar = document.querySelector('.navbar')
   
@@ -18,7 +18,6 @@ function openNavbar() {
   } else {
     navbar.className = 'navbar'
   }
-  console.log(navbar)
 }
 // function openTrailer() {
 //   popupWindow = document.querySelector('iframe');
