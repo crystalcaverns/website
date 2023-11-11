@@ -6,95 +6,81 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Crystal Caverns</title>
   <link rel="icon" type="image/x-icon" href="images/favicon-150-150-logo.png">
-  <link rel="stylesheet" href="styles/animations.css">
-  <link rel="stylesheet" href="styles/call-to-action.css">
-  <link rel="stylesheet" href="styles/footer.css">
-  <link rel="stylesheet" href="styles/gallery.css">
-  <link rel="stylesheet" href="styles/general.css">
-  <link rel="stylesheet" href="styles/header.css">
-  <link rel="stylesheet" href="styles/hero.css">
-  <link rel="stylesheet" href="styles/reactive-layout.css">
+  <link rel="stylesheet" href="css/general.css"
   <script src="script.js"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
+  <!--
+    1. Top navbar - LEFT: LOGO, RIGHT: Store, News, Discord
+  -->
   <header>
-    <nav class="navbar">
+    <nav>
       <ul>
-        <li><a onclick="openNavbar()"><span class="material-symbols-rounded">
-          menu
-          </span></a></li>
-        <li><a href="/">home</a></li>
-        <li style="display:none !important"><a href="#">rules</a></li>
-        <li style="display:none !important"><a href="https://crystalcavernstest.tebex.io">store</a></li>
-        <li><a target="_blank" href="https://discord.gg/6VC4zpYnJW" target="_blank">discord</a></li>
-        <li><a class="ip-adress">play.crystalcaverns.net</a></li>
+        <li class="navbar"><img alt="Crystal Caverns Logo" src="assets/images/Crystal_Caverns_logo.png"></li>
+        <li class="navbar">Store</li>
+        <li class="navbar">News</li>
+        <li class="navbar">Discord</li>
+        <li class="navbar">Roadmap</li>
+        <li class="navbar">Play now!</li>
       </ul>
     </nav>
   </header>
   <section class="hero">
-    <img class="logo-big" src="images/name-logo.webp">
-    <img class="hero-banner" src="images/hero.webp">
-    <form target="_blank" action="https://discord.gg/6VC4zpYnJW">
-      <button type=submit" class="watch-trailer-btn"><!--WATCH TRAILER-->JOIN OUR DISCORD!</button>
-    </form>
-    
-    <p class="hero-text">We're an upcoming survival server with RPG elements, custom bosses, biomes, enchants, a wonderful resource pack and much more! Our goal is to create a unique survival experience with awesome features and a great community that you can get lost in for hours.</p>
-  </section>
-  <section class="social-media">
-    <a target="_blank" href="https://discord.gg/6VC4zpYnJW"><img class="social-media-btn-img" alt="Discord Logo" src="images/icons/discord-logo.svg"></a>
-    <a target="_blank" href="https://www.tiktok.com/@crystalcavernsnetwork"><img class="social-media-btn-img" alt="TikTok Logo" src="images/icons/tiktok-logo.svg"></a>
-    <a target="_blank" href="https://twitter.com/CrystalCaverns_"><img class="social-media-btn-img" alt="Twitter Logo" src="images/icons/twitter-logo.svg"></a>
-    <a target="_blank" href="https://www.youtube.com/channel/UCi1BObPMJuwSJxYIOOvqHHg"><img class="social-media-btn-img" alt="Youtube Logo" src="images/icons/youtube-logo.svg"></a>
-    <a target="_blank" href="https://www.instagram.com/crystalcavernsnetwork/"><img class="social-media-btn-img" alt="Instagram Logo" src="images/icons/instagram-logo.svg"></a>
-  </section>
-  <h1 class="gallery-title">Find out more!</h1>
-  <section class="gallery">
-    <div class="gallery-item">
-      <img src="images/dungeons.webp" alt="Dungeons">
-      <h3>Amazing dungeons</h3>
-      <p>Explore proceduraly generated dungeons, defeat the bosses and get insane new items!</p>
-    </div>
-    <div class="gallery-item">
-      <img src="images/biomes.webp" alt="Biomes">
-      <h3>Hundreds of biomes</h3>
-      <p>There are countless new biomes for you to explore, making your every adventure feels fresh.</p>
-    </div>
-    <div class="gallery-item">
-      <img src="images/structure.webp" alt="Custom Structures">
-      <h3>Crazy Structures</h3>
-      <p>Come across crazy large structures with amazing loot and unique bosses while exploring!</p>
-    </div>
-    <div class="gallery-item">
-      <img src="images/enchant.webp" alt="Items & Enchants">
-      <h3>Countless unique items!</h3>
-      <p>Every item you acquire on your journey will be unique, with custom enchants, names, rarities and more!</p>
+    <img src="assets/images/crystal_caverns_banner.png" alt="Crystal Cavern">
+    <button>Play now!</button>
+    <div class="statistics">
+      <div>Players online: 0</div>
+      <div>Active discord users: 0</div>
     </div>
   </section>
-  <hr>
-  <section class="call-to-action-section">
-    <a class="cta" target="_blank" href="https://discord.gg/6VC4zpYnJW">
-      <div id="discord" class="call-to-action">
-        <div>
-          <h2>Join us on Discord!</h2>
-          <p>We want to build a welcoming community with all of you lovely people! All of our events, updates and more can be found on our discord. See ya there!</p>
-        </div>
-        <img src="images/icons/logo-discord.svg" alt="Discord">
-      </div>
-    </a>
-    <!-- <a class="cta"> -->
-      <div style="cursor:auto;"id="store" class="call-to-action">
-        <img src="images/icons/shop-icon.svg" alt="Shop Icon">
-        <div>
-          <h2>Support us!</h2>
-          <p>The store is <strong>coming soon!</strong> Once open, you will be able to recieve cool perks and rewards, while supporting our work and letting us pay for servers. Thank you so much!<!--If you’d like to support us and recieve cool rewards, consider supporting us by buying something from our store. We stride to keep it as fair as possible!--></p>
-        </div>
-      </div>
-    <!-- </a> -->
+  <section class="news">
+    <h1>Recent News</h1>
+    <div class="post recent-post">Post1</div>
+    <div class="post recent-post">Post2</div>
+    <div class="post recent-post">Post3</div>
+    <button>Find out more!</button>
+  </section>
+  <section class="factions">
+    <h1>Choose your faction!</h1>
+    <h2>Etheria</h2>
+    <img src="" alt="etheria_logo">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim eius beatae ratione quibusdam iusto explicabo quaerat aliquam tenetur aliquid dolorum. Dolores, rem officiis. Perspiciatis repudiandae totam aut aperiam dolor voluptatum.</p>
+  </section>
+  <section class="discover">
+    <h1>All of the cool stuff!</h1>
+
+    <section class="discover-card">
+      <h2>Become a legendary warrior</h2>
+      <p>Dungeon runs, overworld dungeons, fight bosses, obtain infinite unique items and custom weapons with our enhanced crafting system.</p>
+    </section>
+
+    <section class="discover-card">
+      <h2>Explore a brand new world</h2>
+      <p>Custom biomes, bombastic dungeons, intricate lore</p>
+    </section>
+
+    <section class="discover-card">
+      <h2>Level up your character!</h2>
+      <p>valhalla </p>
+    </section>
+
+    <section class="discover-card">
+      <h2>Express yourself</h2>
+      <p>Private realms, cosmetics, classes system, infinite weapon variants </p>
+    </section>
+  </section>
+  <section class="store">
+    <h3>Check out our store!</h3>
+    <p>If you'd like to support us and get awesome cosmetics in the process, check out our store!</p>
   </section>
   <footer>
-    <img src="images/icon-logo.webp">
-    <h1>Crystal Caverns is in no way endorsed or affiliated with Mojang AB.</h1>
-  </footer>  
+    <ul>
+      <li><a href=""><img src="" alt="twitter"></a></li>
+      <li><a href=""><img src="" alt="instagram"></a></li>
+      <li><a href=""><img src="" alt="youtube"></a></li>
+    </ul>
+
+  </footer>
 </body>
 </html>
