@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap');
+
 *{
   padding:0;
   margin:0;
@@ -10,7 +11,7 @@
   /* Colors */
   --primary: #9944FF;
   --secondary: #BDA4FF;
-  --accent: #25EF8A;
+  --accent: #7152c6;
   --background: #1e1e1e;
   --grey: #161616;
   --text: #ffffff;
@@ -19,7 +20,7 @@
   --heading-large: 34px;
   --heading-small: 25px;
   --paragraph: 20px;
-  --secondary:18px;
+  --secondary-text:18px;
   --corner:10px;
   --border-radius:10px;
 }
@@ -51,7 +52,7 @@ h3 {
 }
 
 h4 {
-  font-size: var(--secondary);
+  font-size: var(--secondary-text);
   font-weight: 300;
 }
 
@@ -60,7 +61,10 @@ p {
   font-weight: 400;
 }
 
+
 /* Clickable elements and active states */
+
+
 a {
   color:white;
   transition: color 150ms;
@@ -69,10 +73,46 @@ a:hover{
   color: var(--primary);
 }
 
+/* Default button styles */
+
+.btn-primary {
+  background-color: var(--primary);
+  border:none;
+  color:var(--text);
+  font-size:40px;
+  font-weight: 700;
+  padding:20px;
+  border-radius:var(--border-radius);
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+
+.btn-secondary {
+  background-color: inherit;
+  border: 5px solid var(--secondary);
+  color:var(--secondary);
+  background-color: var(--grey);
+  font-size:40px;
+  font-weight: 500;
+  padding:15px;
+  border-radius:var(--border-radius);
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+
 /* Additional */
-img{
+
+.horizontally-centered {
+  transform: translateX(-50%);
+  left:50%;
+  position: absolute;
+}
+
+/* Temp or testing */
+
+img:not(#hero-img) {
   max-width:100%;
 }
-body {
-  margin-bottom: 1000px
+body{
+  margin-bottom:1000px
 }

@@ -6,8 +6,9 @@ header {
   padding:5px 15px;
   align-items: center;
   position: sticky;
-  top:0;
+  top:0px;
   background-color: var(--grey);
+  z-index: 1000;
 }
 
 .top-nav ul {
