@@ -1,0 +1,24 @@
+header {
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding:5px 15px;
+  align-items: center;
+  position: sticky;
+  top:0;
+  background-color: var(--grey);
+}
+
+.top-nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  gap:25px;
+  margin-right:10px;
+}
+
+.logo {
+  aspect-ratio: 1/1;
+  width:8%;
+}
