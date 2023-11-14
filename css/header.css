@@ -6,9 +6,10 @@ header {
   padding:5px 15px;
   align-items: center;
   position: sticky;
-  top:0px;
+  top:-1px;
   background-color: var(--grey);
   z-index: 1000;
+  user-select: none;
 }
 
 .top-nav ul {
@@ -22,4 +23,6 @@ header {
 .logo {
   aspect-ratio: 1/1;
   width:8%;
+  min-width: 50px;
+  min-height: 50px;
 }

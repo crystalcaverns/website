@@ -21,11 +21,13 @@
   --heading-small: 25px;
   --paragraph: 20px;
   --secondary-text:18px;
-  --corner:10px;
-  --border-radius:10px;
+  --border-radius:15px;
+  --default-margin:20px;
 }
 
+
 /* Text */
+
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -33,22 +35,30 @@ body {
   color:var(--text);
   position:relative; /*for other elements to be sticky*/
 }
-
-h1, li{
+li {
   font-size: var(--heading-large);
   font-weight: 700;
   letter-spacing: -1px;
 }
 
+h1 {
+  font-size: var(--heading-large);
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+}
+
 h2 {
   font-size: var(--heading-large);
   font-weight: 500;
+  margin-bottom: 30px;
 }
 
 h3 {
   font-size: var(--heading-small);
   font-weight: 700;
   letter-spacing: -0.5px;
+  margin-bottom: 20px;
 }
 
 h4 {
@@ -85,6 +95,17 @@ a:hover{
   border-radius:var(--border-radius);
   cursor: pointer;
   letter-spacing: 2px;
+  transition: box-shadow 400ms ease, transform 250ms ease, filter 150ms ease;
+}
+
+.btn-primary:hover {
+  box-shadow: 2px 30px 25px -18px var(--primary);
+  transform: translateY(-10%);
+  filter: saturate(120%);
+}
+
+.btn-primary:active {
+  filter:saturate(160%);
 }
 
 .btn-secondary {
@@ -98,9 +119,17 @@ a:hover{
   border-radius:var(--border-radius);
   cursor: pointer;
   letter-spacing: 2px;
+  transition: box-shadow 300ms ease, filter 150ms ease;
 }
 
-/* Additional */
+.btn-secondary:hover {
+  box-shadow: 2px 20px 15px -15px var(--secondary);
+  filter:brightness(110%);
+}
+
+.btn-secondary:active {
+  filter:brightness(130%);
+}
 
 .horizontally-centered {
   transform: translateX(-50%);
@@ -108,11 +137,18 @@ a:hover{
   position: absolute;
 }
 
+/* Additional */
+
+
+
 /* Temp or testing */
 
 img:not(#hero-img) {
   max-width:100%;
 }
 body{
-  margin-bottom:1000px
+  max-width: 1500px;
+  display:flex;
+  align-items: center;
+  flex-direction: column;
 }

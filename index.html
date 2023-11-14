@@ -6,31 +6,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Crystal Caverns</title>
   <link rel="icon" type="image/x-icon" href="images/favicon-150-150-logo.png">
-  <link rel="stylesheet" href="css/general.css"
   <script src="script.js"></script>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
   <!-- CSS Links -->
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/general.css">
+  <link rel="stylesheet" href="css/top-navbar.css">
+  <link rel="stylesheet" href="css/news.css">
+
+  <!-- External -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
 </head>
 <body>
   <header>
     <a class="logo" href="/"><img alt="Crystal Caverns Logo" src="assets/images/icon-logo.webp"></a>
-    <nav class="top-nav">
+    <nav  class="top-nav">
       <ul>
-        <li class="nav-hide navbar"><a href="/store"><h1>Store</h1></a></li>
+        <li class="nav-hide navbar"><a href="/store">Store</a></li>
         <li class="nav-hide navbar"><a href="/news">News</a></li>
         <li class="nav-hide navbar"><a href="/discord">Discord</a></li>
         <li class="nav-hide navbar"><a href="/roadmap">Roadmap</a></li>
         <li id="play-now" class="navbar"><a href="/playnow">Play now</a></li>
       </ul>
+        <input type="checkbox" id="overlay-input">
+        <label for="overlay-input" id="overlay-button"><div id="btn-click-area"><span></span></div></label>
     </nav>
   </header>
   <section class="hero">
     <img id="hero-logo" class="horizontally-centered" src="assets/images/name-logo.webp" alt="Crystal Caverns Logo">
-    <button id="hero-btn-1" class=" btn-primary horizontally-centered">Play now!</button>
-    <button id="hero-btn-2" class=" btn-secondary horizontally-centered">Join our Discord!</button>
+    <div id="btn-container" class="horizontally-centered">
+      <button id="hero-btn-1" class=" btn-primary ">Play now!</button>
+      <button id="hero-btn-2" class=" btn-secondary">Join our Discord!</button>
+    </div>
     <img id="hero-img" src="assets/images/crystal_caverns_banner.png" alt="Crystal Cavern">
     <div class="statistics">
       <div class="stat">
@@ -52,17 +61,36 @@
 
   <section class="news">
     <h1>Recent News</h1>
-    <div class="post recent-post">Post1</div>
-    <div class="post recent-post">Post2</div>
-    <div class="post recent-post">Post3</div>
-    <button>Find out more!</button>
+    <div class="news-posts-container">
+      <div class="post recent-post">
+        <img src="assets/images/lumina_render.png" alt="Launch date announced!">
+        <h3>Official launch date!</h3>
+        <p>We are finally ready to launch into an <strong>Open beta!</strong> You can look forward to a one-of-a-kind experience, albeit with a few bugs.</p>
+        <button class="btn-primary">Read more</button>
+      </div>
+      <div class="post recent-post">
+        <img src="assets/images/lumina_render.png" alt="Launch date announced!">
+        <h3>Official launch date!</h3>
+        <p>We are finally ready to launch into an <strong>Open beta!</strong> You can look forward to a one-of-a-kind experience, albeit with a few bugs.</p>
+        <button class="btn-primary">Read more</button>
+      </div>
+      <div class="post recent-post">
+        <img src="assets/images/lumina_render.png" alt="Launch date announced!">
+        <h3>Official launch date!</h3>
+        <p>We are finally ready to launch into an <strong>Open beta!</strong> You can look forward to a one-of-a-kind experience, albeit with a few bugs.</p>
+        <button class="btn-primary">Read more</button>
+      </div>
+    </div>
+    <div id="find-out-more-container">
+      <button id="find-out-more" class="btn-secondary ">View all posts</button>
+    </div>  
   </section>
-  <section class="factions">
+  <!-- <section class="factions">
     <h1>Choose your faction!</h1>
     <h2>Etheria</h2>
     <img src="" alt="etheria_logo">
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim eius beatae ratione quibusdam iusto explicabo quaerat aliquam tenetur aliquid dolorum. Dolores, rem officiis. Perspiciatis repudiandae totam aut aperiam dolor voluptatum.</p>
-  </section>
+  </section> -->
   <section class="discover">
     <h1>All of the cool stuff!</h1>
 

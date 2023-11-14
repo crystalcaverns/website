@@ -11,39 +11,31 @@
 #hero-img {
   height: 94vh; /*100vh - top nav height, probably not a good solution but cant think of anything better*/
   width: 100%;
+  min-height: 600px;
   object-fit: cover;
 }
-
+#btn-container {
+  width: 50%;
+  bottom:30vh;
+}
+@media screen and (height < 800px) {
+  #btn-container {
+    bottom:190px;
+  }
+  #hero-btn-1 {
+    margin-bottom:40px;
+  }
+}
 #hero-btn-1 {
-  transition: box-shadow 400ms, transform 250ms, filter 150ms;
-  bottom:33vh;
-  width: 50%;
+  width:100%;
+  margin-bottom:5vh;
 }
-#hero-btn-1:hover {
-  transform: translateX(-50%) translateY(-10%);
-  filter: saturate(120%);
-  box-shadow: 2px 30px 25px -18px var(--primary);
-}
-#hero-btn-1:active {
-  filter:saturate(160%);
-}
-
-
 #hero-btn-2 {
-  bottom:20vh;
-  width: 50%;
-  transition: box-shadow 300ms, filter 150ms;
-}
-#hero-btn-2:hover{
-  box-shadow: 2px 20px 15px -15px var(--secondary);
-  filter:brightness(110%);
-}
-#hero-btn-2:active {
-  filter:brightness(130%);
+  width: 100%;
 }
 
 .statistics {
-  width:calc(100% - 40px);
+  width:calc(100% - var(--default-margin) * 2);
   padding:30px;
   display:flex;
   justify-content: space-between;
