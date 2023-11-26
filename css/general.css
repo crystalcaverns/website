@@ -33,12 +33,43 @@ html {
   /* Transitions */
   --default-btn-transition: 200ms ease-in-out;
   --font: 'Open Sans', sans-serif;
+
+  /* Breakpoints */
+  --breakpoint-mobile: 450px;
+  --breakpoint-tablet: 850px;
+  --breakpoint-laptop: 1200px;
+  --breakpoint-desktop: 1500px;
+}
+/* Mobile */
+@media screen and (width < 450px) {
+  :root {
+    /* Sizing */
+    --heading-large: 25px;
+    --heading-small: 22px;
+    --paragraph: 16px;
+    --secondary-text:14px;
+
+    --default-margin:10px;
+  }
+}
+/* Tablet */
+@media screen and (width < 450px) {
+  :root {
+    /* Sizing */
+    --heading-large: 30px;
+    --heading-small: 23px;
+    --paragraph: 18px;
+    --secondary-text:16px;
+
+    --default-margin:10px;
+  }
 }
 
 #content-padding {
-  margin:20px;
-  max-width: 1500px;
+  margin:var(--default-margin);
+  max-width: var(--breakpoint-desktop);
 }
+
 
 body {
   font-family: var(--font);
@@ -56,6 +87,8 @@ h1 {
   font-weight: 700;
   letter-spacing: -1px;
   margin-bottom: 30px;
+  font-family: 'Minecraft';
+  letter-spacing: 1px;
 }
 
 h2 {
@@ -102,7 +135,7 @@ button {
   background-color: var(--primary);
   border:none;
   color:var(--text);
-  font-size:40px;
+  font-size:var(--heading-large);
   font-weight: bold;
   padding:15px;
   font-family: 'Kebab';
@@ -127,7 +160,7 @@ button {
   border: 5px solid var(--secondary);
   color:var(--secondary);
   background-color: var(--grey);
-  font-size:40px;
+  font-size:var(--heading-large);
   font-weight: 500;
   padding:15px;
   /* border-radius:var(--border-radius); */
@@ -161,9 +194,4 @@ button {
 
 img:not(#hero-img) {
   max-width:100%;
-}
-body{
-  display:flex;
-  align-items: center;
-  flex-direction: column;
 }
