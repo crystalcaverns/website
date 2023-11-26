@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Crystal Caverns</title>
-  <link rel="icon" type="image/x-icon" href="images/favicon-150-150-logo.png">
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon-150-150-logo.png">
   <script src="script.js"></script>
 
   <!-- CSS Links -->
@@ -35,13 +35,16 @@
     </nav>
   </header>
   <section class="hero">
-    <img id="hero-logo" class="horizontally-centered" src="assets/images/name-logo.webp" alt="Crystal Caverns Logo">
+    
     <div id="btn-container" class="horizontally-centered">
+      <img id="hero-logo" src="assets/images/name-logo.webp" alt="Crystal Caverns Logo">
       <button id="hero-btn-1" class=" btn-primary ">Play now!</button>
       <button id="hero-btn-2" class=" btn-secondary">Join our Discord!</button>
     </div>
     <img id="hero-img" src="assets/images/crystal_caverns_banner.png" alt="Crystal Cavern">
-    <div class="statistics">
+  </section>
+  <section id="content-padding">
+    <section class="statistics">
       <div class="stat">
         <img alt="Server Icon" src="assets/icons/server-icon.svg">
         <div>
@@ -56,75 +59,79 @@
           <p>34 people chatting</p>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section class="news">
-    <h1>Recent News</h1>
-    <div class="news-posts-container">
-      <div class="post recent-post">
-        <img src="assets/images/lumina_render.png" alt="Launch date announced!">
-        <h3>Official launch date!</h3>
-        <p>We are finally ready to launch into an <strong>Open beta!</strong> You can look forward to a one-of-a-kind experience, albeit with a few bugs.</p>
-        <button class="btn-primary">Read more</button>
+    </section>
+    <section class="news">
+      <h1>Recent News</h1>
+      <div class="news-posts-container">
+        <div class="post recent-post">
+          <div>
+            <img src="assets/images/lumina_render.png" alt="Launch date announced!">
+            <h3>Official launch date!</h3>
+            <p>We are finally ready to launch into an <strong>Open beta!</strong> You can look forward to a one-of-a-kind experience, albeit with a few bugs.</p>
+          </div>
+          <button class="btn-primary">Read more</button>
+        </div>
+        <div class="post recent-post">
+          <div>
+            <img src="assets/images/lumina_render.png" alt="Launch date announced!">
+            <h3>Official launch date lorem ipsum dolor sit amet!</h3>
+            <p>We are finally ready to launch into an <strong>Open beta!</strong> You can look forward to a one-of-a-kind experience, albeit with a few bugs. There is also this hunk of text to show that it actually works.</p>
+          </div>
+          <button class="btn-primary">Read more</button>
+        </div>
+        <div class="post recent-post">
+          <div>
+            <img src="assets/images/lumina_render.png" alt="Launch date announced!">
+            <h3>Official launch date!</h3>
+            <p>We are finally ready to launch into an <strong>Open beta!</strong> You can look forward to a one-of-a-kind experience, albeit with a few bugs.</p>
+          </div>
+          <button class="btn-primary">Read more</button>
+        </div>
       </div>
-      <div class="post recent-post">
-        <img src="assets/images/lumina_render.png" alt="Launch date announced!">
-        <h3>Official launch date!</h3>
-        <p>We are finally ready to launch into an <strong>Open beta!</strong> You can look forward to a one-of-a-kind experience, albeit with a few bugs.</p>
-        <button class="btn-primary">Read more</button>
-      </div>
-      <div class="post recent-post">
-        <img src="assets/images/lumina_render.png" alt="Launch date announced!">
-        <h3>Official launch date!</h3>
-        <p>We are finally ready to launch into an <strong>Open beta!</strong> You can look forward to a one-of-a-kind experience, albeit with a few bugs.</p>
-        <button class="btn-primary">Read more</button>
-      </div>
-    </div>
-    <div id="find-out-more-container">
-      <button id="find-out-more" class="btn-secondary ">View all posts</button>
-    </div>  
-  </section>
-  <!-- <section class="factions">
-    <h1>Choose your faction!</h1>
-    <h2>Etheria</h2>
-    <img src="" alt="etheria_logo">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim eius beatae ratione quibusdam iusto explicabo quaerat aliquam tenetur aliquid dolorum. Dolores, rem officiis. Perspiciatis repudiandae totam aut aperiam dolor voluptatum.</p>
-  </section> -->
-  <section class="discover">
-    <h1>All of the cool stuff!</h1>
-
-    <section class="discover-card">
-      <h2>Become a legendary warrior</h2>
-      <p>Dungeon runs, overworld dungeons, fight bosses, obtain infinite unique items and custom weapons with our enhanced crafting system.</p>
+      <div id="find-out-more-container">
+        <button id="find-out-more" class="btn-secondary ">View all posts</button>
+      </div>  
     </section>
-
-    <section class="discover-card">
-      <h2>Explore a brand new world</h2>
-      <p>Custom biomes, bombastic dungeons, intricate lore</p>
+    <!-- <section class="factions">
+      <h1>Choose your faction!</h1>
+      <h2>Etheria</h2>
+      <img src="" alt="etheria_logo">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim eius beatae ratione quibusdam iusto explicabo quaerat aliquam tenetur aliquid dolorum. Dolores, rem officiis. Perspiciatis repudiandae totam aut aperiam dolor voluptatum.</p>
+    </section> -->
+    <section class="discover">
+      <h1>All of the cool stuff!</h1>
+  
+      <section class="discover-card">
+        <h2>Become a legendary warrior</h2>
+        <p>Dungeon runs, overworld dungeons, fight bosses, obtain infinite unique items and custom weapons with our enhanced crafting system.</p>
+      </section>
+  
+      <section class="discover-card">
+        <h2>Explore a brand new world</h2>
+        <p>Custom biomes, bombastic dungeons, intricate lore</p>
+      </section>
+  
+      <section class="discover-card">
+        <h2>Level up your character!</h2>
+        <p>valhalla </p>
+      </section>
+  
+      <section class="discover-card">
+        <h2>Express yourself</h2>
+        <p>Private realms, cosmetics, classes system, infinite weapon variants </p>
+      </section>
     </section>
-
-    <section class="discover-card">
-      <h2>Level up your character!</h2>
-      <p>valhalla </p>
-    </section>
-
-    <section class="discover-card">
-      <h2>Express yourself</h2>
-      <p>Private realms, cosmetics, classes system, infinite weapon variants </p>
+    <section class="store">
+      <h3>Check out our store!</h3>
+      <p>If you'd like to support us and get awesome cosmetics in the process, check out our store!</p>
     </section>
   </section>
-  <section class="store">
-    <h3>Check out our store!</h3>
-    <p>If you'd like to support us and get awesome cosmetics in the process, check out our store!</p>
-  </section>
+  
   <footer>
     <ul>
       <li><a href=""><img src="" alt="twitter"></a></li>
       <li><a href=""><img src="" alt="instagram"></a></li>
       <li><a href=""><img src="" alt="youtube"></a></li>
-      <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima sit excepturi error est fugiat illum laborum porro tenetur corrupti, dolores aliquam ducimus dicta deleniti mollitia amet sed ab asperiores alias?</h4>
-      <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia commodi asperiores dolores voluptas laudantium, enim dolor ipsa nam velit qui eos, consequatur id quam, quas ex reiciendis esse harum perferendis?</h3>
     </ul>
 
   </footer>

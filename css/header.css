@@ -5,11 +5,12 @@ header {
   justify-content: space-between;
   padding:5px 15px;
   align-items: center;
-  position: sticky;
-  top:-1px;
+  position: fixed;
   background-color: var(--grey);
   z-index: 1000;
   user-select: none;
+  left:0;
+  top:0;
 }
 
 .top-nav ul {
@@ -22,7 +23,5 @@ header {
 
 .logo {
   aspect-ratio: 1/1;
-  width:8%;
-  min-width: 50px;
-  min-height: 50px;
+  width:80px;
 }
