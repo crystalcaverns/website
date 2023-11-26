@@ -138,7 +138,7 @@ button {
   font-size:var(--heading-large);
   font-weight: bold;
   padding:15px;
-  font-family: 'Kebab';
+  font-family: 'Minecraft';
   /* border-radius:var(--border-radius); */
   cursor: pointer;
   letter-spacing: 2px;
@@ -166,7 +166,7 @@ button {
   /* border-radius:var(--border-radius); */
   cursor: pointer;
   letter-spacing: 2px;
-  font-family: 'Kebab';
+  font-family: 'Minecraft';
   transition: box-shadow 300ms ease, filter 150ms ease, transform var(--default-btn-transition);
 }
 

@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'Kebab';
+  font-family: 'Minecraft';
   src: url('Minecraft-Regular.woff2') format('woff2'),
       url('Minecraft-Regular.woff') format('woff'),
       url('Minecraft-Regular.ttf') format('truetype'),
@@ -20,7 +20,7 @@
   font-display: swap;
 }
 
-/* @font-face {
+@font-face {
   font-family: 'Minecraft';
   src: url('Minecraft-Italic.woff2') format('woff2'),
       url('Minecraft-Italic.woff') format('woff'),
@@ -40,5 +40,5 @@
   font-weight: bold;
   font-style: italic;
   font-display: swap;
-} */
+}
 
