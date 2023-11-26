@@ -60,12 +60,12 @@
 
 }
 /* Desktop */
-@media screen and (width > 1500px) {
+@media screen and (width > 1200px) {
   #btn-container {
     width:40%;
   }
 }
-/* Tabket */
+/* Tablet */
 @media screen and (width < 850px) {
   #btn-container {
     width: 90%;
