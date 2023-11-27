@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Crystal Caverns | Minecraft Survival Server</title>
   <link rel="icon" type="image/x-icon" href="assets/images/favicon-150-150-logo.png">
-  <script src="script.js"></script>
+  <script defer src="script.js"></script>
 
   <!-- CSS Links -->
   <link rel="stylesheet" href="css/header.css">
@@ -26,14 +26,12 @@
     <a class="logo" href="/"><img class="logo" alt="Crystal Caverns Logo" src="assets/images/icon-logo.webp"></a>
     <nav  class="top-nav">
       <ul>
-        <li class="nav-hide navbar"><a href="/store">Store</a></li>
-        <li class="nav-hide navbar"><a href="/news">News</a></li>
+        <li class="nav-hide navbar"><a target="_blank" href="https://store.crystalcaverns.net">Store</a></li>
+        <!-- <li class="nav-hide navbar"><a href="/">News</a></li> -->
         <li class="nav-hide navbar"><a target="_blank" href="https://discord.crystalcaverns.net">Discord</a></li>
-        <li class="nav-hide navbar"><a href="/roadmap">Roadmap</a></li>
-        <li id="play-now" class="navbar"><a href="/playnow">Play now</a></li>
+        <!-- <li class="nav-hide navbar"><a href="">Roadmap</a></li> -->
+        <li id="play-now" class="navbar"><a href="/playnow">Play</a></li>
       </ul>
-        <input type="checkbox" id="overlay-input">
-        <label for="overlay-input" id="overlay-button"><div id="btn-click-area"><span></span></div></label>
     </nav>
   </header>
   <section class="hero">
@@ -50,20 +48,21 @@
         <img alt="Server Icon" src="assets/icons/server-icon.svg">
         <div>
           <h3>Server status</h3>
-          <p>34 players online</p>
+          <p id="server-status">Unknown players online</p>
         </div>
       </div>
       <div class="stat">
         <img alt="Discord Icon" src="assets/icons/discord-logo-purple.svg">
         <div>
           <h3>Discord server</h3>
-          <p>34 players chatting</p>
+          <p id="discord-status">Unknown players chatting</p>
         </div>
       </div>
     </section>
     <section class="news">
       <h1>Recent News</h1>
       <div class="news-posts-container">
+        
         <div class="post recent-post">
           <div>
             <img src="assets/images/lumina_render.png" alt="Launch date announced!">
@@ -72,24 +71,10 @@
           </div>
           <button class="btn-primary">Read more</button>
         </div>
-        <div class="post recent-post">
-          <div>
-            <img src="assets/images/lumina_render.png" alt="Launch date announced!">
-            <h3>Official launch date lorem ipsum dolor sit amet!</h3>
-            <p>We are finally ready to launch into an <strong>Open beta!</strong> You can look forward to a one-of-a-kind experience, albeit with a few bugs. There is also this hunk of text to show that it actually works.</p>
-          </div>
-          <button class="btn-primary">Read more</button>
-        </div>
-        <div class="post recent-post">
-          <div>
-            <img src="assets/images/lumina_render.png" alt="Launch date announced!">
-            <h3>Official launch date!</h3>
-            <p>We are finally ready to launch into an <strong>Open beta!</strong> You can look forward to a one-of-a-kind experience, albeit with a few bugs.</p>
-          </div>
-          <button class="btn-primary">Read more</button>
-        </div>
+        <div></div>
+        <div></div>
       </div>
-      <button id="find-out-more" class="btn-secondary ">View all posts</button>
+      <!-- <button id="find-out-more" class="btn-secondary ">View all posts</button> -->
     </section>
     <h1 class="discover-title">Discover Crystal Caverns</h1>
   </div>

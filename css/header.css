@@ -26,3 +26,15 @@ header {
   aspect-ratio: 1/1;
   width:70px;
 }
+
+@media screen and (width < 550px) {
+  header {
+    padding: 5px 
+  }
+  a {
+    font-size: var(--heading-small);
+  }
+  .top-nav ul {
+    gap:10px;
+  }
+}
