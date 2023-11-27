@@ -1,0 +1,38 @@
+a .cta.cta {
+  color:white;
+}
+
+.call-to-action {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  background-color: var(--primary);
+  padding:var(--default-margin);
+  /* border-radius: var(--border-radius); */
+  gap:30px;
+  width:97%;
+  margin: 0 auto 30px auto;
+
+  .text {
+    margin-right:20px;
+  }
+  p {
+    font-family: var(--font);
+    font-weight: 500;
+    letter-spacing: 0;
+  }
+  
+  > img {
+    filter: invert(99%) sepia(99%) saturate(0%) hue-rotate(303deg) brightness(102%) contrast(104%);
+    width: 100%;
+    align-self: center;
+    padding: 0;
+  }
+}
+
+@media screen and (width < 850px) {
+  
+}
+
+#increase-padding {
+  padding: 20px 0;
+}

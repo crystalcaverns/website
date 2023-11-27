@@ -58,14 +58,14 @@ html {
   :root {
     /* Sizing */
     --heading-large: 30px;
-    --heading-small: 23px;
+    --heading-small: 22px;
     --paragraph: 18px;
     --secondary-text:16px;
 
     --default-margin:10px;
   }
 }
-@media screen and (width > 1200px) {
+@media screen and (width > 1500px) {
   .content-padding.content-padding {
     margin: 0 auto;
   }
@@ -186,4 +186,7 @@ button {
   transform: translateX(-50%);
   left:50%;
   position: absolute;
+}
+.discord.discord {
+  background-color: var(--discord);
 }
