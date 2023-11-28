@@ -12,13 +12,9 @@
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/hero.css">
   <link rel="stylesheet" href="css/general.css">
-  <link rel="stylesheet" href="css/top-navbar.css">
   <link rel="stylesheet" href="css/news.css">
   <link rel="stylesheet" href="css/discover.css">
   <link rel="stylesheet" href="css/cta.css">
-
-  <!-- External -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
 </head>
 <body>
@@ -30,128 +26,146 @@
         <!-- <li class="nav-hide navbar"><a href="/">News</a></li> -->
         <li class="nav-hide navbar"><a target="_blank" href="https://discord.crystalcaverns.net">Discord</a></li>
         <!-- <li class="nav-hide navbar"><a href="">Roadmap</a></li> -->
-        <li id="play-now" class="navbar"><a href="/playnow">Play</a></li>
+        <li id="play-now" class="navbar"><a href="posts/how-to-play.html">Play</a></li>
+        <li id="ip">play.crystalcaverns.net</li>
       </ul>
     </nav>
   </header>
-  <section class="hero">
-    <div id="btn-container" class="horizontally-centered">
-      <img id="hero-logo" src="assets/images/name-logo.webp" alt="Crystal Caverns Logo">
-      <button id="hero-btn-1" class=" btn-primary ">Play now!</button>
-      <button id="hero-btn-2" class=" btn-secondary">Join Discord!</button>
-    </div>
-    <img id="hero-img" src="assets/images/crystal_caverns_banner.png" alt="Crystal Cavern">
-  </section>
-  <div class="content-padding">
-    <section class="statistics">
-      <div class="stat">
-        <img alt="Server Icon" src="assets/icons/server-icon.svg">
-        <div>
-          <h3>Server status</h3>
-          <p id="server-status">Unknown players online</p>
-        </div>
-      </div>
-      <div class="stat">
-        <img alt="Discord Icon" src="assets/icons/discord-logo-purple.svg">
-        <div>
-          <h3>Discord server</h3>
-          <p id="discord-status">Unknown players chatting</p>
-        </div>
-      </div>
-    </section>
-    <!-- <section class="news">
-      <h1>Recent News</h1>
-      <div class="news-posts-container">
-        
-        <div class="post recent-post">
-          <div>
-            <img src="assets/images/lumina_render.png" alt="Launch date announced!">
-            <h3>Official launch date!</h3>
-            <p>We are finally ready to launch into an <strong>Open beta!</strong> You can look forward to a one-of-a-kind experience, albeit with a few bugs.</p>
-          </div>
-          <button class="btn-primary">Read more</button>
-        </div>
-        <div></div>
-        <div></div>
-      </div>
-      <button id="find-out-more" class="btn-secondary ">View all posts</button>
-    </section> -->
-    <h1 class="discover-title">Discover Crystal Caverns</h1>
-  </div>
-  <section class="discover">
-    
-    <img class="divider-top" src="assets/images/divider_top.svg" alt="divider_top">
+  <main>
+    <section class="hero">
+      <div id="btn-container" class="horizontally-centered">
+        <img id="hero-logo" src="assets/images/name-logo.webp" alt="Crystal Caverns Logo">
+        <form action="posts/how-to-play.html">
+          <button type="submit" id="hero-btn-1" class=" btn-primary ">Play now!</button>
+        </form>
+        <form action="https://discord.crystalcaverns.net">
+          <button type="submit" id="hero-btn-2" class=" btn-secondary">Join Discord!</button>
 
-    <section class="discover-card-left">
-      <div class="discover-max-width">
-        <div>
-          <h2>Become a legendary warrior</h2>
-          <p>Dungeon runs, overworld dungeons, fight bosses, obtain infinite unique items and custom weapons with our enhanced crafting system.</p>
-        </div>
-        <img src="assets/images/lumina_render.png" alt="lumina">
+        </form>
       </div>
+      <img id="hero-img" src="assets/images/crystal_caverns_banner.png" alt="Crystal Cavern">
     </section>
-
-    <img class="divider-bottom" src="assets/images/divider_bottom.svg" alt="divider_bottom">
-    
-    <section class="discover-card">
-      <div>
-        <h2>Level up your character!</h2>
-        <p>valhalla </p>
-      </div>
-      <img src="assets/images/lumina_render.png" alt="lumina">
-    </section>
-    <img class="divider-top" src="assets/images/divider_top.svg" alt="divider_top">
-
-    <section class="discover-card-left">
-      <div class="discover-max-width">
-        <div>
-          <h2>Explore a brand new world</h2>
-          <p>Custom biomes, bombastic dungeons, intricate lore</p>
-        </div>
-        <img src="assets/images/lumina_render.png" alt="lumina">
-      </div>  
-    </section>
-
-    <img class="divider-bottom" src="assets/images/divider_bottom.svg" alt="divider_bottom">
-
-    <section class="discover-card">
-      <div>
-        <h2>Express yourself</h2>
-        <p>Private realms, cosmetics, classes system, infinite weapon variants </p>
-      </div>  
-      <img src="assets/images/lumina_render.png" alt="lumina">
-    </section>
-  </section>
-  <section>
     <div class="content-padding">
-      <a target="_blank" class="cta" href="https://store.crystalcaverns.net">
-        <div class="store call-to-action btn-primary">
-          <img src="assets/icons/shop-icon.svg" alt="Store Icon">
-          <div class="text">
-            <h3>Support what we do!</h3>
-            <p>If you'd like to support us and get awesome cosmetics in the process, check out our store! Customize your profile, weapons, obtain new companions and so much more!</p>
-          </div> 
+      <section class="statistics">
+        <div class="stat">
+          <img alt="Server Icon" src="assets/icons/server-icon.svg">
+          <div>
+            <h3>Server status</h3>
+            <p id="server-status">Unknown players online</p>
+          </div>
         </div>
-      </a>
-      <a class="cta" target="_blank" href="https://discord.crystalcaverns.net">
-        <div class="discord store call-to-action btn-primary">
-          <img id="increase-padding" src="assets/icons/discord-logo.svg" alt="Discord logo">
-          <div class="text">
-            <h3>Join our amazing community!</h3>
-            <p>Want to meet awesome people, or are you curious about our server?</p>
-          </div> 
+        <div class="stat">
+          <img alt="Discord Icon" src="assets/icons/discord-logo-purple.svg">
+          <div>
+            <h3>Discord server</h3>
+            <p id="discord-status">Unknown players chatting</p>
+          </div>
         </div>
-      </a>
-  </section>
-    <!-- <footer>
-      <ul>
-        <li><a href=""><img src="" alt="twitter"></a></li>
-        <li><a href=""><img src="" alt="instagram"></a></li>
-        <li><a href=""><img src="" alt="youtube"></a></li>
-      </ul>
+      </section>
+      <section class="news">
+        <h1>Recent News</h1>
+        <div class="news-posts-container">
+          <div class="post recent-post">
+            <div>
+              <img src="assets/images/open-beta.webp" alt="Launch date announced!">
+              <h3>Open beta is here!</h3>
+              <p>We're finally ready for all of you to experience Crystal Caverns! The server will launch in an open beta on <strong>December 1st 2023, 18:00 CET! </strong>
+            </div>
+            <form action="posts/open-beta-launch.html">
+              <button type="submit" class="btn-primary">Read more</button>
+            </form>
+          </div>
+          <div class="post recent-post">
+            <div>
+              <img src="assets/images/open-beta.webp" alt="Launch date announced!">
+              <h3>How to join Crystal Caverns?</h3>
+              <p>Don't know how to join Crystal Caverns? Here's a quick guide! The IP adress is: <strong>play.crystalcaverns.net</strong></p>
+            </div>
+            <form action="posts/how-to-play.html">
+              <button type="submit" class="btn-primary">Read more</button>
+            </form>
+          </div>
+          <div></div>
+        </div>
+        <!-- <button id="find-out-more" class="btn-secondary ">View all posts</button> -->
+      </section>
+      <h1 class="discover-title">Discover Crystal Caverns</h1>
+    </div>
+    <section class="discover">
+      
+      <img class="divider-top" src="assets/images/divider_top.svg" alt="divider_top">
   
-    </footer> -->
-  </div>
+      <section class="discover-card-left">
+        <div class="discover-max-width">
+          <div>
+            <h2>Become a legendary warrior</h2>
+            <p>Coming soon</p>
+          </div>
+          <img src="assets/images/lumina_render.png" alt="lumina">
+        </div>
+      </section>
+  
+      <img class="divider-bottom" src="assets/images/divider_bottom.svg" alt="divider_bottom">
+      
+      <section class="discover-card">
+        <div>
+          <h2>Level up your character!</h2>
+          <p>Coming soon</p>
+        </div>
+        <img src="assets/images/lumina_render.png" alt="lumina">
+      </section>
+      <img class="divider-top" src="assets/images/divider_top.svg" alt="divider_top">
+  
+      <section class="discover-card-left">
+        <div class="discover-max-width">
+          <div>
+            <h2>Explore a brand new world</h2>
+            <p>Coming soon</p>
+          </div>
+          <img src="assets/images/lumina_render.png" alt="lumina">
+        </div>  
+      </section>
+  
+      <img class="divider-bottom" src="assets/images/divider_bottom.svg" alt="divider_bottom">
+  
+      <section class="discover-card">
+        <div>
+          <h2>Express yourself</h2>
+          <p>Coming soon</p>
+        </div>  
+        <img src="assets/images/lumina_render.png" alt="lumina">
+      </section>
+    </section>
+    <section>
+      <div class="content-padding">
+        <a target="_blank" class="cta" href="https://store.crystalcaverns.net">
+          <div class="store call-to-action btn-primary">
+            <img class="img-cta" src="assets/icons/shop-icon.svg" alt="Store Icon">
+            <div class="text">
+              <h3>Support what we do!</h3>
+              <p class="cta-p">If you'd like to support us and get awesome cosmetics in the process, check out our store! Customize your profile, weapons, obtain new companions and so much more!</p>
+            </div> 
+          </div>
+        </a>
+        <a class="cta" target="_blank" href="https://discord.crystalcaverns.net">
+          <div class="discord store call-to-action btn-primary">
+            <img class="img-cta" id="increase-padding" src="assets/icons/discord-logo-white.svg" alt="Discord logo">
+            <div class="text">
+              <h3>Join our amazing community!</h3>
+              <p class="cta-p">Want to meet awesome people, or are you curious about our server? Join our discord for news and updates, community challenges and an awesome community!</p>
+            </div> 
+          </div>
+        </a>
+    </section>
+      <!-- <footer>
+        <ul>
+          <li><a href=""><img src="" alt="twitter"></a></li>
+          <li><a href=""><img src="" alt="instagram"></a></li>
+          <li><a href=""><img src="" alt="youtube"></a></li>
+        </ul>
+    
+      </footer> -->
+    </div>
+  </main>
 </body>
 </html>

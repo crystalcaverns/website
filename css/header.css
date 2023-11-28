@@ -20,6 +20,7 @@ header {
   list-style-type: none;
   gap:25px;
   margin-right:10px;
+  align-items: center;
 }
 
 .logo {
@@ -27,14 +28,28 @@ header {
   width:70px;
 }
 
+#ip {
+  cursor:pointer;
+  user-select:all;
+  padding:5px 20px;
+  background-color: var(--primary);
+  border-radius: var(--border-radius);
+  letter-spacing: 0.6px;
+}
 @media screen and (width < 550px) {
   header {
-    padding: 5px 
+    padding: 5px; 
   }
   a {
     font-size: var(--heading-small);
   }
   .top-nav ul {
     gap:10px;
+  }
+}
+/* Tablet */
+@media screen and (width < 850px) {
+  #ip {
+    display:none;
   }
 }

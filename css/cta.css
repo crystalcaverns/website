@@ -15,24 +15,18 @@ a .cta.cta {
   .text {
     margin-right:20px;
   }
-  p {
-    font-family: var(--font);
-    font-weight: 500;
-    letter-spacing: 0;
-  }
-  
-  > img {
-    filter: invert(99%) sepia(99%) saturate(0%) hue-rotate(303deg) brightness(102%) contrast(104%);
-    width: 100%;
-    align-self: center;
-    padding: 0;
-  }
 }
-
-@media screen and (width < 850px) {
-  
+.cta-p {
+  font-family: var(--font);
+  font-weight: 500;
+  letter-spacing: 0;
+}
+.img-cta {
+  width: 100%;
+  align-self: center;
+  padding: 0;
 }
 
 #increase-padding {
-  padding: 20px 0;
+  margin: 20px 0;
 }
