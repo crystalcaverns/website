@@ -9,7 +9,7 @@ a .cta.cta {
   padding:var(--default-margin);
   /* border-radius: var(--border-radius); */
   gap:30px;
-  width:97%;
+  width:94%;
   margin: 0 auto 30px auto;
 
   .text {
