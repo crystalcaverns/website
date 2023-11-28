@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap');
+@import url(../assets/fonts/fonts.css);
+
+html {
+  display: grid;
+  justify-items: center;
+}
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+:root{
+  /* Colors */
+  --primary: #9944FF;
+  --secondary: #BDA4FF;
+  --accent: #7152c6;
+  --background: #1e1e1e;
+  --grey: #161616;
+  --text: #ffffff;
+  --discord: #5865F2;
+
+/* Sizing */
+  --heading-large: 34px;
+  --heading-small: 25px;
+  --paragraph: 20px;
+  --secondary-text:18px;
+
+  --border-radius:15px;
+  --default-margin:20px;
+
+  /* Transitions */
+  --default-btn-transition: 200ms ease-in-out;
+  --font: 'Open Sans', sans-serif;
+
+  /* Breakpoints */
+  --breakpoint-mobile: 450px;
+  --breakpoint-tablet: 850px;
+  --breakpoint-laptop: 1024px;
+  --breakpoint-desktop: 1500px;
+}
+/* Mobile */
+@media screen and (width < 450px) {
+  :root {
+    /* Sizing */
+    --heading-large: 25px;
+    --heading-small: 22px;
+    --paragraph: 16px;
+    --secondary-text:14px;
+
+    --default-margin:10px;
+  }
+}
+/* Tablet */
+@media screen and (width < 450px) {
+  :root {
+    /* Sizing */
+    --heading-large: 30px;
+    --heading-small: 24px;
+    --paragraph: 18px;
+    --secondary-text:16px;
+
+    --default-margin:10px;
+  }
+}
+@media screen and (width > 1500px) {
+  .content-padding.content-padding {
+    margin: 0 auto;
+  }
+}
+
+.content-padding {
+  margin:var(--default-margin);
+  max-width: var(--breakpoint-desktop);
+}
+
+
+body {
+  font-family: var(--font);
+  background-color: #1e1e1e;
+  color:var(--text);
+}
+li {
+  font-size: var(--heading-large);
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+h1 {
+  font-size: var(--heading-large);
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  font-family: 'Minecraft';
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-size: var(--heading-large);
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: var(--heading-small);
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin-bottom: 20px;
+}
+
+h4 {
+  font-size: var(--secondary-text);
+  font-weight: 300;
+}
+
+p {
+  font-size: var(--paragraph);
+  font-weight: 400;
+}
+
+
+/* Clickable elements and active states */
+
+
+a {
+  color:white;
+  transition: color 150ms;
+}
+a:hover{
+  color: var(--primary);
+}
+
+/* Default button styles */
+
+button {
+  font-family:var(--font);
+}
+.btn-primary {
+  background-color: var(--primary);
+  border:none;
+  color:var(--text);
+  font-size:var(--heading-large);
+  font-weight: bold;
+  padding:15px;
+  font-family: 'Minecraft';
+  cursor: pointer;
+  letter-spacing: 2px;
+  transition: transform var(--default-btn-transition), filter 150ms ease;
+}
+
+.btn-primary:hover {
+  transform:scale(105%, 105%);
+  filter: saturate(120%);
+}
+
+.btn-primary:active {
+  filter:saturate(160%);
+}
+
+.btn-secondary {
+  background-color: inherit;
+  border: 5px solid var(--secondary);
+  color:var(--secondary);
+  background-color: var(--grey);
+  font-size:var(--heading-large);
+  font-weight: 500;
+  padding:15px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  font-family: 'Minecraft';
+  transition: box-shadow 300ms ease, filter 150ms ease, transform var(--default-btn-transition);
+}
+
+.btn-secondary:hover {
+  filter:brightness(110%);
+  transform:scale(105%, 105%);
+}
+
+.btn-secondary:active {
+  filter:brightness(130%);
+}
+
+.horizontally-centered {
+  transform: translateX(-50%);
+  left:50%;
+  position: absolute;
+}
+.discord.discord {
+  background-color: var(--discord);
+}

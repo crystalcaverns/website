@@ -1,31 +1,49 @@
-console.log('Welcome to Crystal Caverns! :D')
-// function copyServerAdress() {
-//   let ipButton = document.querySelector('.ip-adress')
-//   ipButton = document.createElement('button');
-//   ipButton.classList.add('ip-adress');
-//   ipButton.textContent = '192.168.1.1';
-
-//   ipButton.addEventListener('click', () => {
-//     const textToCopy = ipButton.textContent;
-//     let clipboard = new ClipboardJS();
-//     clipboard.writeText(textToCopy);
-// });
-function openNavbar() {
-  const navbar = document.querySelector('.navbar')
-  
-  if(navbar.className === 'navbar') {
-    navbar.className += ' reactive'
-  } else {
-    navbar.className = 'navbar'
-  }
+function getDiscordStatus(url) {
+  const discord_status = document.getElementById('discord-status');
+  fetch(url)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(`Network response was not ok: ${response.status}`);
+      }
+      return response.json();
+    })
+    .then(data => {
+      discord_status.innerText = `${data.presence_count} players chatting`;
+    })
 }
-// function openTrailer() {
-//   popupWindow = document.querySelector('iframe');
-//   if(popupWindow.className === '') {
-//     popupWindow.className = 'trailer-open'
-//   } else {
-//     popupWindow.className = ' '
-//   }
-//   console.log(popupWindow)
+function getServerStatus(url) {
+  const server_status = document.getElementById('server-status');
+  fetch(url)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(`Network response was not ok: ${response.status}`);
+      }
+      return response.json();
+    })
+    .then(data => {
+      if(data.online) {
+        server_status.innerHTML = `${data.players.online} players online`;
+      } else {
+        server_status.innerHTML = `Server is currently offline`;
+      }
+    })
+}
 
-// }
+const serverStatusAPI = 'https://api.mcsrvstat.us/3/play.crystalcaverns.net';
+getServerStatus(serverStatusAPI);
+
+const discordStatusAPI = 'https://discord.com/api/guilds/1102891773543583766/widget.json';
+getDiscordStatus(discordStatusAPI);
+
+const intervalId = setInterval(() => {
+  getDiscordStatus(discordStatusAPI);
+  getServerStatus(serverStatusAPI);
+}, 5000);
+
+
+
+// Call the function initially
+
+
+
+

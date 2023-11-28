@@ -1,0 +1,55 @@
+.news {
+  margin-top:20px;
+  display:grid;
+
+  & p {
+    margin-bottom: 35px;
+    overflow-y: hidden;
+  }
+  & .btn-primary {
+    font-size:var(--heading-large);
+    padding: 15px;
+    width:100%;
+    margin-top: auto;
+    
+  }
+  & #find-out-more {
+    padding:15px 30px;
+    font-size:var(--heading-large);
+    width:60%;
+    margin: 0 auto 50px auto;
+  }
+  & img {
+    width:100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    margin-bottom:10px;
+  }
+}
+.news-posts-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--default-margin);
+  margin-bottom:40px;
+}
+.post {
+  border-radius: var(--border-radius);
+  background-color: var(--grey);
+  padding:25px;
+  position: relative;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+/* Tablet */
+@media screen and (width < 850px) {
+  #find-out-more#find-out-more {
+    /* This is vile but it works */
+    width: 90%;
+  }
+  .btn-primary.btn-primary {
+    width: 100%;
+  }
+}
