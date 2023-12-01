@@ -12,10 +12,13 @@
 }
 .discover-card, .discover-card-left {
   padding: 0 var(--default-margin);
+  display: grid;
+  gap:40px;
 }
 .discover-card-left {
   padding: 30px var(--default-margin) 0 var(--default-margin);
   background: var(--grey);
+  
 }
 .discover-card {
   max-width: var(--breakpoint-desktop);
@@ -30,6 +33,10 @@
 .discover img {
   max-width: 100%;
   width: 100%;
+  align-self: center;
+  height: 100%;
+  object-fit: cover;
+  border-radius:30px;
 }
 
 .discover-max-width {
@@ -37,6 +44,7 @@
   max-width: var(--breakpoint-desktop);
   margin: 0 auto;
   grid-template-columns: 1fr 1fr;
+  gap:40px;
   > img {
     grid-row: 1 / 2;
   }
