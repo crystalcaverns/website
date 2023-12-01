@@ -1,3 +1,15 @@
+#cta-grid {
+  grid-template-columns: 1fr 1fr;
+  display:grid;
+  width:100%;
+  gap:20px;
+}
+@media screen and (width < 850px) {
+  #cta-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 a .cta.cta {
   color:white;
 }
@@ -11,6 +23,7 @@ a .cta.cta {
   gap:30px;
   width:94%;
   margin: 0 auto 30px auto;
+  height:100%;
 
   .text {
     margin-right:20px;

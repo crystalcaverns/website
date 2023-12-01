@@ -88,3 +88,7 @@ form {
     justify-content: space-between;
   }
 }
+.about-us > h1 {
+  margin:20px 0;
+  color: var(--secondary);
+}
