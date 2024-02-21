@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crystal Caverns | Minecraft Survival Server</title>
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon-150-150-logo.png">
+  <script defer src="script.js"></script>
+
+  <meta name="description" content="">
+  <script defer src="script.js"></script>
+  <link rel="icon" href="assets/icons/favicon.ico" sizes="150x150">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_EN">
+  <meta property="og:title" content="Crystal Caverns">
+  <meta property="og:url" content="https://crystalcaverns.net">
+  <meta property="og:site_name" content="Crystal Caverns">
+  <meta property="og:image" content="https://crystalcaverns.net/assets/images/crystal_caverns_banner.webp">
+  <meta property="og:description" content="Crystal Caverns is a Survival Minecraft Server with RPG elements, custom bosses, hundreds of new biomes and enchants, a wonderful resource pack and much more!.">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://crystalcaverns.net">
+
+  <!-- CSS Links -->
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/general.css">
+  <link rel="stylesheet" href="css/news.css">
+  <link rel="stylesheet" href="css/discover.css">
+  <link rel="stylesheet" href="css/cta.css">
+
+  <!-- Preload -->
+  <link rel="preload" as="image" href="assets/images/name-logo.webp">
+  <link rel="preload" as="image" href="assets/images/crystal_caverns_banner.webp">
+
+</head>
+<body>
+  <header>
+    <a class="logo" href="/"><img class="logo" alt="Crystal Caverns Logo" src="assets/images/icon-logo.webp"></a>
+    <nav  class="top-nav">
+      <ul>
+        <li class="nav-hide navbar"><a target="_blank" href="https://store.crystalcaverns.net">Store</a></li>
+        <!-- <li class="nav-hide navbar"><a href="/">News</a></li> -->
+        <li class="nav-hide navbar"><a target="_blank" href="https://discord.crystalcaverns.net">Discord</a></li>
+        <!-- <li class="nav-hide navbar"><a href="">Roadmap</a></li> -->
+        <li id="play-now" class="navbar"><a href="posts/how-to-play.html">Play</a></li>
+        <li id="ip">play.crystalcaverns.net</li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div id="btn-container" class="horizontally-centered">
+        <img id="hero-logo" src="assets/images/name-logo.webp" alt="Crystal Caverns Logo">
+        <form action="posts/how-to-play.html">
+          <button type="submit" id="hero-btn-1" class=" btn-primary ">Play now!</button>
+        </form>
+        <form action="https://discord.crystalcaverns.net">
+          <button type="submit" id="hero-btn-2" class=" btn-secondary">Join Discord!</button>
+        </form>
+      </div>
+      <img id="hero-img" src="assets/images/crystal_caverns_banner.webp" alt="Crystal Cavern">
+    </section>
+    <div class="content-padding">
+      <section class="statistics">
+        <div class="stat">
+          <img loading="lazy" alt="Server Icon" src="assets/icons/server-icon.svg">
+          <div>
+            <h3>Server status</h3>
+            <p id="server-status">Unknown players online</p>
+          </div>
+        </div>
+        <div class="stat">
+          <img loading="lazy" alt="Discord Icon" src="assets/icons/discord-logo-purple.svg">
+          <div>
+            <h3>Discord server</h3>
+            <p id="discord-status">Unknown players chatting</p>
+          </div>
+        </div>
+      </section>
+      <section class="about-us">
+        <h1>What is Crystal Caverns?</h1>
+        <p>Crystal Caverns is a Survival Minecraft Server with RPG elements, custom bosses, hundreds of new biomes and enchants, a wonderful resource pack and much more! We're a group of passionate Minecraft players and developers, and our goal is to create an awesome experience, with unique gameplay and a great community that you can get lost in for hours.</p>
+      </section>
+      <section class="news">
+        <h1>Recent News</h1>
+        <div class="news-posts-container">
+          <div class="post recent-post">
+            <div>
+              <img loading="lazy" src="assets/images/open_beta_1.webp" alt="Launch date announced!">
+              <h3>Open beta is here!</h3>
+              <p>We're finally ready for all of you to experience Crystal Caverns! The server will launch in an open beta on <strong>December 1st 2023, 18:00 CET! </strong>
+            </div>
+            <form action="posts/open-beta-launch.html">
+              <button type="submit" class="btn-primary">Read more</button>
+            </form>
+          </div>
+          <div class="post recent-post">
+            <div>
+              <img loading="lazy" src="assets/images/open-beta.webp" alt="Launch date announced!">
+              <h3>How to join Crystal Caverns?</h3>
+              <p>Don't know how to join Crystal Caverns? Here's a quick guide! The IP adress is: <strong>play.crystalcaverns.net</strong></p>
+            </div>
+            <form action="posts/how-to-play.html">
+              <button type="submit" class="btn-primary">Read more</button>
+            </form>
+          </div>
+          <div></div>
+        </div>
+        <!-- <button id="find-out-more" class="btn-secondary ">View all posts</button> -->
+      </section>
+      <h1 class="discover-title">Discover Crystal Caverns</h1>
+    </div>
+    <section class="discover">
+      
+      <img loading="lazy" class="divider-top" src="assets/images/divider_top.svg" alt="divider_top">
+  
+      <section class="discover-card-left">
+        <div class="discover-max-width">
+          <div>
+            <h2>Become a legendary warrior</h2>
+            <p>Join the ranks of the best adventurers Minecraft has ever seen! Gear up with the best from an infinite catalog of equipment and put it to the test against terrible creatures corrupted by power and greed, who wish to spread like a plague across the land, with only the greatest and bravest warriors able to stand against them. Will you become one of them?</p>
+          </div>
+          <img class="discover-img" loading="lazy" src="assets/images/legendary_warrior.webp" alt="Legendary warrior">
+        </div>
+      </section>
+  
+      <img loading="lazy" class="divider-bottom" src="assets/images/divider_bottom.svg" alt="divider_bottom">
+      
+      <section class="discover-card">
+        <div>
+          <h2>Level up in your own way</h2>
+          <p>Get ready for anything that comes your way! With our complex systems of upgrades to your character, weapons, tools and armor, your choices are limitless. Choose your path and forge the tools needed to walk upon it with different weapon and armor classes, such as hammers and spears. Which path will you choose?</p>
+        </div>
+        <img class="discover-img" loading="lazy" src="assets/images/level_up.webp" alt="Level up!">
+      </section>
+      <img loading="lazy" class="divider-top" src="assets/images/divider_top.svg" alt="divider_top">
+  
+      <section class="discover-card-left">
+        <div class="discover-max-width">
+          <div>
+            <h2>Explore a brand new world</h2>
+            <p>Pack up for the adventure of a lifetime in our heavily customized survival experience, with features that could previously only be achieved with mods, now all in vanilla Minecraft with tens of new biomes, hundreds of new structures and our one-of-a-kind Dungeon Run gamemode, complete with powerful loot and equally powerful enemies. Do you have what it takes?</p>
+          </div>
+          <img class="discover-img" loading="lazy" src="assets/images/new_world_1.webp" alt="A brand new world!">
+        </div>  
+      </section>
+  
+      <img loading="lazy" class="divider-bottom" src="assets/images/divider_bottom.svg" alt="divider_bottom">
+  
+      <section class="discover-card">
+        <div>
+          <h2>Fully express yourself</h2>
+          <p>Completely customize your appearance with tons of cosmetics, giving you the ability to change everything, from how your armor looks with an expanded armor trim system with billions of possible combinations, all the way to making a custom profile that suits you with themes, titles, nameplates and more! Are you ready to be yourself more than ever?</p>
+        </div>  
+        <img class="discover-img" loading="lazy" src="assets/images/express_yourself.png" alt="Player menu on Crystal Caverns">
+      </section>
+    </section>
+    <div class="content-padding">
+      <section id="cta-grid">
+        <a target="_blank" class="cta" href="https://store.crystalcaverns.net">
+          <div class="store call-to-action btn-primary">
+            <img loading="lazy" class="img-cta" src="assets/icons/shop-icon.svg" alt="Store Icon">
+            <div class="text">
+              <h3>Support what we do!</h3>
+              <p class="cta-p">If you'd like to support us and get awesome cosmetics in the process, check out our store! Customize your profile, weapons, obtain new companions and so much more!</p>
+            </div> 
+          </div>
+        </a>
+        <a class="cta" target="_blank" href="https://discord.crystalcaverns.net">
+          <div class="discord store call-to-action btn-primary">
+            <img loading="lazy" class="img-cta" id="increase-padding" src="assets/icons/discord-logo-white.svg" alt="Discord logo">
+            <div class="text">
+              <h3>Join our amazing community!</h3>
+              <p class="cta-p">Want to meet awesome people, or are you curious about our server? Join our discord for news and updates, community challenges and an awesome community!</p>
+            </div> 
+          </div>
+        </a>
+      </section>
+      <!-- <footer>
+        <ul>
+          <li><a href=""><img src="" alt="twitter"></a></li>
+          <li><a href=""><img src="" alt="instagram"></a></li>
+          <li><a href=""><img src="" alt="youtube"></a></li>
+        </ul>
+    
+      </footer> -->
+    </div>
+  </main>
+</body>
+</html>
