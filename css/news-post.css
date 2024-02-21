@@ -24,31 +24,51 @@ img:first-child {
 .article {
   max-width: var(--breakpoint-tablet);
   margin: 0 auto 50px auto;
-  & h1 {
+}
+.article h1 {
     font-size: var(--heading-small);
     color: var(--secondary);
     margin-top:25px;
     margin-bottom:5px;
   }
-  & p {
+.article p {
     margin-bottom:20px;
     text-align: left;
     line-height: 1.5;
   }
-  & img {
+ img {
     margin: 5px 0 20px 0;
   }
-  & a {
+.article a {
     color: var(--secondary);
     font-weight: bold;
   }
-  & a:hover {
+.article a:hover {
     filter: saturate(3);
   }
-}
 .highlight {
   font-family: 'Minecraft';
   color: var(--secondary);
   font-weight: bold;
   user-select: all;
+}
+.callout {
+  border-left:7px solid var(--primary);
+  border-radius: 4px;
+  padding:16px;
+  background-color: rgba(153, 68, 255, 0.6);
+  margin:32px 0;
+
+}
+.article li {
+  font-size: 20px;
+  margin-left:24px;
+  margin:8px 0 8px 24px;
+}
+.article li p {
+  margin-bottom:8px;
+  letter-spacing: 0.2px;
+}
+.article h3 {
+  margin: 16px 0;
 }

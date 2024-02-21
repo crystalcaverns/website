@@ -82,7 +82,7 @@ body {
   background-color: #1e1e1e;
   color:var(--text);
 }
-li {
+nav li {
   font-size: var(--heading-large);
   font-weight: 700;
   letter-spacing: -1px;
